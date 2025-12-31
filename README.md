@@ -2,6 +2,8 @@
 
 A comprehensive business analysis tool that generates professional reports with competitor analysis, market trends, SEO insights, and actionable revenue generation strategies.
 
+🔗 **[View on GitHub](https://github.com/jcaruso666-rgb/business-report-generator)**
+
 ## Features
 
 - **Multi-Step Business Input Form** - Easy-to-use interface to collect business details
@@ -24,7 +26,7 @@ A comprehensive business analysis tool that generates professional reports with 
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/jcaruso666-rgb/business-report-generator.git
 
 # Navigate to project directory
 cd business-report-generator
@@ -55,6 +57,7 @@ npm run preview
 ## Tech Stack
 
 - **Vite** - Fast build tool and dev server
+- **TypeScript** - Type-safe JavaScript
 - **Vanilla JavaScript** - No framework dependencies for maximum performance
 - **CSS3** - Modern styling with glassmorphism effects
 - **HTML5** - Semantic markup
@@ -64,8 +67,9 @@ npm run preview
 ```
 business-report-generator/
 ├── index.html          # Main HTML file
-├── style.css           # All styles
-├── main.js             # Application logic
+├── src/
+│   ├── main.ts         # Application logic
+│   └── style.css       # All styles
 ├── package.json        # Dependencies
 └── README.md           # This file
 ```
