@@ -1,74 +1,122 @@
-# Website
+# Enigma Business Report Generator
 
-React + Vite + Hono + Tailwind + Cloudflare Workers
+A comprehensive business analysis tool that generates professional reports with competitor analysis, market trends, SEO insights, and actionable revenue generation strategies.
 
-## Scripts
-- `bun run check` — Run before committing to verify types, build, and deployment config
-- `bun run cf-typegen` — Run after modifying Cloudflare bindings to regenerate types
+## Features
 
-## Quick Start
+- **Multi-Step Business Input Form** - Easy-to-use interface to collect business details
+- **Strengths & Weaknesses Analysis** - AI-driven identification of business advantages and areas for improvement
+- **Revenue Generation Strategies** - Actionable recommendations focused on website creation and SEO optimization
+- **Competitor Analysis** - Automatic identification and analysis of key competitors
+- **Market Trends** - Current industry trends with visual indicators
+- **SEO Keyword Research** - Popular search terms with volume and difficulty metrics
+- **Clear Action Plan** - Step-by-step roadmap for business growth
+- **PDF Export** - Professional report export functionality
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
 
 ```bash
+# Clone the repository
+git clone <your-repo-url>
+
+# Navigate to project directory
+cd business-report-generator
+
 # Install dependencies
-bun install
+npm install
 
-# Generate types and run migrations
-bun cf-typegen
-bun db:generate
-bun db:migrate
-
-# Start dev server
-bun dev
+# Start development server
+npm run dev
 ```
 
-## shadcn/ui
-
-Add components you need, customize them however you want.
+### Build for Production
 
 ```bash
-bun x shadcn@latest add button card dialog
+npm run build
+npm run preview
 ```
 
-Components land in `src/web/components/ui/`, import with `@/components/ui/button`.
+## Usage
 
-```tsx
-import { Button } from "@/components/ui/button"
+1. Enter your business name
+2. Select your industry from the grid
+3. Provide location and optional website URL
+4. Add a brief business description
+5. Click "Generate Report" to create your comprehensive business analysis
+6. Use "Export to PDF" to save your report
 
-<Button variant="outline">Click me</Button>
+## Tech Stack
+
+- **Vite** - Fast build tool and dev server
+- **Vanilla JavaScript** - No framework dependencies for maximum performance
+- **CSS3** - Modern styling with glassmorphism effects
+- **HTML5** - Semantic markup
+
+## Project Structure
+
+```
+business-report-generator/
+├── index.html          # Main HTML file
+├── style.css           # All styles
+├── main.js             # Application logic
+├── package.json        # Dependencies
+└── README.md           # This file
 ```
 
-## Routing
+## Features in Detail
 
-Client-side routing uses [wouter](https://github.com/molefrog/wouter). Add routes in `src/web/app.tsx`:
+### Business Overview
+Analyzes your business description to provide a concise summary of operations and value proposition.
 
-```tsx
-import { Route, Switch } from "wouter";
+### Strengths & Weaknesses
+- Identifies competitive advantages
+- Highlights areas for improvement
+- Provides balanced analysis for strategic planning
 
-<Switch>
-  <Route path="/" component={Home} />
-  <Route path="/about" component={About} />
-</Switch>
-```
+### Revenue Opportunities
+- Website optimization strategies
+- SEO best practices
+- Content marketing recommendations
+- Conversion optimization tactics
+- Analytics and tracking setup
+- Growth hacking techniques
 
-## Database
+### Competitor Intelligence
+- Lists 3-5 key competitors
+- Provides competitor strengths
+- Suggests differentiation strategies
 
-Uses [Drizzle ORM](https://orm.drizzle.team/) with Cloudflare D1.
+### Market Trends
+- Industry growth patterns
+- Consumer behavior shifts
+- Technology adoption rates
+- Economic indicators
 
-```bash
-bun db:generate       # Generate migrations from schema
-bun db:migrate        # Apply migrations locally
-```
+### SEO Keyword Research
+- High-volume search terms
+- Keyword difficulty scores
+- Trend indicators
+- Strategic recommendations
 
-Schema is in `src/api/database/schema.ts`, migrations in `src/api/migrations/`.
+## License
 
-## Coding Style
+MIT
 
-- Functional programming preferred (use `const`, avoid `let`)
-- Extract types into separate interfaces
-- No explicit return types unless necessary
-- Prefer early returns to reduce nesting
-- Use switch statements or key-value maps instead of nested if statements
-- Keep code simple—minimize complex state and prop drilling
-- Use existing libraries over custom implementations
-- Prefer built-in Node modules over custom utils
-- Write tests for complex functionality
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## Support
+
+For issues and questions, please open an issue on GitHub.
+
+---
+
+Built with ❤️ for businesses ready to grow
